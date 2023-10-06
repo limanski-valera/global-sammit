@@ -592,7 +592,6 @@ body::after {
 }
 
 .footer__text {
-  font-size: 0.875rem;
   line-height: 1.25;
 }
 
@@ -1474,6 +1473,14 @@ body::after {
     padding-bottom: 4.375rem;
   }
 
+  .footer {
+    font-size: 0.875rem;
+  }
+
+  .footer__text {
+    font-size: 0.875rem;
+  }
+
   .main-block {
     padding-top: 17.5rem;
   }
@@ -1674,6 +1681,14 @@ body::after {
 
   .footer {
     padding-bottom: 2.5rem;
+  }
+
+  .footer {
+    font-size: 0.5rem;
+  }
+
+  .footer__text {
+    font-size: 0.5rem;
   }
 
   .main-block {
@@ -2210,6 +2225,30 @@ body::after {
 @supports not (padding-bottom: clamp( 2.5rem , 1.6044776119rem  +  4.4776119403vw , 4.375rem )) {
     .footer {
       padding-bottom: calc(2.5rem + 1.875 * (100vw - 20rem) / 41.875);
+    }
+}
+
+@supports (font-size: clamp( 0.5rem , 0.3208955224rem  +  0.8955223881vw , 0.875rem )) {
+    .footer {
+      font-size: clamp( 0.5rem , 0.3208955224rem  +  0.8955223881vw , 0.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.5rem , 0.3208955224rem  +  0.8955223881vw , 0.875rem )) {
+    .footer {
+      font-size: calc(0.5rem + 0.375 * (100vw - 20rem) / 41.875);
+    }
+}
+
+@supports (font-size: clamp( 0.5rem , 0.3208955224rem  +  0.8955223881vw , 0.875rem )) {
+    .footer__text {
+      font-size: clamp( 0.5rem , 0.3208955224rem  +  0.8955223881vw , 0.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.5rem , 0.3208955224rem  +  0.8955223881vw , 0.875rem )) {
+    .footer__text {
+      font-size: calc(0.5rem + 0.375 * (100vw - 20rem) / 41.875);
     }
 }
 
