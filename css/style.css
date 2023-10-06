@@ -576,10 +576,6 @@ body::after {
   max-width: 20.4375rem;
 }
 
-.footer__logo:not(:last-child) {
-  margin-bottom: 1.875rem;
-}
-
 .footer__logo:active {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
@@ -1477,6 +1473,10 @@ body::after {
     font-size: 0.875rem;
   }
 
+  .footer__logo:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+
   .footer__text {
     font-size: 0.875rem;
   }
@@ -1685,6 +1685,10 @@ body::after {
 
   .footer {
     font-size: 0.5rem;
+  }
+
+  .footer__logo:not(:last-child) {
+    margin-bottom: 0.9375rem;
   }
 
   .footer__text {
@@ -1974,6 +1978,10 @@ body::after {
     margin-bottom: 1.875rem;
   }
 
+  .footer__text:not(:last-child) {
+    margin-bottom: 0.625rem;
+  }
+
   .main-block__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2237,6 +2245,18 @@ body::after {
 @supports not (font-size: clamp( 0.5rem , 0.3208955224rem  +  0.8955223881vw , 0.875rem )) {
     .footer {
       font-size: calc(0.5rem + 0.375 * (100vw - 20rem) / 41.875);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.9375rem , 0.489738806rem  +  2.2388059701vw , 1.875rem )) {
+    .footer__logo:not(:last-child) {
+      margin-bottom: clamp( 0.9375rem , 0.489738806rem  +  2.2388059701vw , 1.875rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.9375rem , 0.489738806rem  +  2.2388059701vw , 1.875rem )) {
+    .footer__logo:not(:last-child) {
+      margin-bottom: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 41.875);
     }
 }
 
