@@ -1178,6 +1178,10 @@ body::after {
   font-weight: 900;
 }
 
+.benefits__text {
+  line-height: 1.44;
+}
+
 .benefits__text p:not(:last-child) {
   margin-bottom: 1.5625rem;
 }
