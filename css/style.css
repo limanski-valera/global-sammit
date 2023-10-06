@@ -1387,12 +1387,6 @@ body::after {
   }
 }
 
-@media (min-width: 47.99875em) and (min-width: 61.875em) {
-  .header__logo {
-    max-width: 20rem;
-  }
-}
-
 @media (min-width: 47.99875em) {
   .footer__container {
     display: -webkit-box;
@@ -1505,6 +1499,10 @@ body::after {
 
   .header {
     padding-bottom: 1.875rem;
+  }
+
+  .header__logo {
+    max-width: 20rem;
   }
 
   .footer {
@@ -1673,6 +1671,10 @@ body::after {
 }
 
 @media (max-width: 48em) {
+  .header__logo {
+    max-width: 9.375rem;
+  }
+
   .header__actions {
     -webkit-column-gap: 1.25rem;
        -moz-column-gap: 1.25rem;
@@ -1887,7 +1889,7 @@ body::after {
   .header__logo {
     position: relative;
     z-index: 4;
-    max-width: 12.5rem;
+    max-width: 15.625rem;
   }
 
   .header__actions {
@@ -2200,7 +2202,7 @@ body::after {
 
 @media (max-width: 29.99875em) {
   .header__logo {
-    max-width: 6.25rem;
+    max-width: 11.25rem;
   }
 
   .header__text-phone {
@@ -2704,7 +2706,7 @@ body::after {
 }
 }
 
-@media (min-width: 47.99875em) and (min-width: 48em) and (max-width: 61.875em) {
+@media (min-width: 48em) and (max-width: 61.875em) {
 @supports (max-width: clamp( 9.375rem , -27.3817567568rem  +  76.5765765766vw , 20rem )) {
     .header__logo {
       max-width: clamp( 9.375rem , -27.3817567568rem  +  76.5765765766vw , 20rem );
@@ -2716,21 +2718,6 @@ body::after {
       max-width: calc(9.375rem + 10.625 * (100vw - 48rem) / 13.875);
     }
 }
-}
-
-@media (min-width: 47.99875em) and (max-width: 48em) {
-  .header__logo {
-    max-width: 9.375rem;
-  }
-
-  .footer__container {
-    gap: 3.125rem;
-  }
-
-  .main-block__image {
-    -ms-flex-preferred-size: 9.375rem;
-        flex-basis: 9.375rem;
-  }
 }
 
 @media (min-width: 48em) and (max-width: 60em) {
@@ -2837,6 +2824,17 @@ body::after {
           flex-basis: calc(9.375rem + 6 * (100vw - 48rem) / 12);
     }
 }
+}
+
+@media (min-width: 47.99875em) and (max-width: 48em) {
+  .footer__container {
+    gap: 3.125rem;
+  }
+
+  .main-block__image {
+    -ms-flex-preferred-size: 9.375rem;
+        flex-basis: 9.375rem;
+  }
 }
 
 @media (max-width: 47.99875em) and (min-width: 48em) {
